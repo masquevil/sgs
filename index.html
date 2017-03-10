@@ -36,7 +36,7 @@ ul{list-style: none;}
     </div>
     <mt-swipe class="cards" :auto="0" :show-indicators="false" @change="showImg">
         <mt-swipe-item v-for="(img, index) in result">
-            <img :src="img.url">
+            <img :src="'http://ol39p0pqm.bkt.clouddn.com/' + img.url">
         </mt-swipe-item>
     </mt-swipe>
 </div>

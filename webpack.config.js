@@ -1,6 +1,7 @@
 var webpack = require("webpack");
 var Path = require("path");
 var exec = require('child_process').exec;
+
 exec("find img/* -name '*'", function(err, data){
     var files = data.split("\n").slice(0, -1);
     exec("echo '" + JSON.stringify(files) + "' > src/img.json");
